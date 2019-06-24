@@ -1,0 +1,51 @@
+#container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#app #content {
+    position: relative;
+}
+
+#app {
+    height: 100%;
+}
+
+
+.slideshow {
+    height: 600px;
+}
+
+.slideshow ul li .img {
+    background-size: cover;
+    background-position: center;
+}
+
+.slideshow.effect-slide ul li.animate {
+    transition: transform 0.3s ease-out;
+}
+.slideshow.effect-slide ul li.current,
+.slideshow.effect-slide ul li.prev,
+.slideshow.effect-slide ul li.next{
+   opacity:1
+}
+
+
+.ms-touch.slideshow {
+    /* overflow-x: scroll;
+    overflow-y: hidden;
+    
+    -ms-overflow-style: none;
+    Hides the scrollbar.
+    -ms-scroll-chaining: none;
+    Prevents Metro from swiping to the next tab or app.
+    -ms-scroll-snap-type: mandatory;
+    Forces a snap scroll behavior on your images.
+    -ms-scroll-snap-points-x: snapInterval(0%, 100%);
+    Defines the y and x intervals to snap to when scrolling. */
+}
+
+.ms-touch.slideshow .prevnext, .ms-touch.slideshow .dotnav{
+   display: none;
+}
